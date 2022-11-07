@@ -56,7 +56,7 @@ public class BikeController {
 			return new ResponseEntity<>("BikeId" + entity.getBikeId() + "Updated Succeccfully", HttpStatus.ACCEPTED);
 		}
 
-		throw new BikeNotFoundException("BikeId" + entity.getBikeId() + "Is not Found");
+		throw new BikeNotFoundException("BikeId" + entity.getBikeId() + "Bike Is Not Found");
 
 	}
 
