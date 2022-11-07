@@ -42,7 +42,7 @@ public class BikeController {
 		Optional<BikeEntity> opt = repository.findByName(entity.getBikeName());
 
 		if (opt.isPresent()) {
-			throw new BikeNotFoundException("Bike AlreadyExist");
+			throw new BikeNotFoundException("Bike Already Exists");
 		} else {
 			repository.save(entity);
 			return new ResponseEntity<>("Bike Aded in the lise", HttpStatus.OK);
